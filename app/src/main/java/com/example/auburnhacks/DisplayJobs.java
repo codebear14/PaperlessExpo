@@ -77,6 +77,10 @@ public class DisplayJobs extends AppCompatActivity {
                         }
 
                     }
+
+                    if(companyList.isEmpty()){
+                        Toast.makeText(getApplicationContext(),"No Jobs available", Toast.LENGTH_SHORT).show();
+                    }
                     companiesAdapter.notifyDataSetChanged();
                 }
             }
